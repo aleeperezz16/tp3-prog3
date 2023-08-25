@@ -11,9 +11,8 @@
             width: 100%;
         }
         .auto-style2 {
-            height:40px;
-            width: 150px;
-
+            height: 40px;
+            width: 159px;
         }
         .auto-style4 {
             height: 35px;
@@ -30,6 +29,13 @@
         .auto-style13 {
             width: 164px;
         }
+        .auto-style14 {
+            width: 159px;
+        }
+        .auto-style15 {
+            height: 51px;
+            width: 159px;
+        }
     </style>
 </head>
 <body>
@@ -37,7 +43,7 @@
         <div>
             <table cellspacing="5" class="auto-style1">
                 <tr>
-                    <td></td>
+                    <td class="auto-style14"></td>
                     <td class="auto-style4">
                         <asp:Label runat="server" Font-Bold="True" Text="Localidades"></asp:Label>
                     </td>
@@ -60,7 +66,7 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td class="auto-style8"></td>
+                    <td class="auto-style15"></td>
                     <td class="auto-style9">
                         <asp:Label ID="Label1" runat="server" Text="Usuarios" Font-Bold="true"></asp:Label>
                     </td>
@@ -79,6 +85,22 @@
                         Contraseña:</td>
                     <td class="auto-style13">
                         <asp:TextBox ID="TbContraseña" runat="server" Width="151px"></asp:TextBox>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        Repetir Contraseña:</td>
+                    <td class="auto-style13">
+                        <asp:TextBox ID="tbRepetirContraseña" runat="server" Width="151px"></asp:TextBox>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        Correo electrónico:</td>
+                    <td class="auto-style13">
+                        <asp:TextBox ID="tbCorreo" runat="server" Width="151px"></asp:TextBox>
                     </td>
                     <td></td>
                 </tr>
