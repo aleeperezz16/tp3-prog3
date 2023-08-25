@@ -11,7 +11,9 @@
             width: 100%;
         }
         .auto-style2 {
+            height:40px;
             width: 150px;
+
         }
         .auto-style3 {
             width: 150px;
@@ -19,6 +21,10 @@
         }
         .auto-style4 {
             height: 35px;
+            width:90px;
+        }
+        .auto-style5{
+            padding-top:30px;
         }
     </style>
 </head>
@@ -27,18 +33,34 @@
         <div>
             <table cellspacing="5" class="auto-style1">
                 <tr>
-                    <td class="auto-style3"></td>
+                    <td></td>
                     <td class="auto-style4">
                         <asp:Label runat="server" Font-Bold="True" Text="Localidades"></asp:Label>
                     </td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
                         <asp:Label runat="server" Text="Nombre de Localidad:"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="TbLocalidad" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TbLocalidad" runat="server" Width="151px"></asp:TextBox>
                     </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2"></td>
+                    <td>
+                        <asp:Button ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" Width="151px" />
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="auto-style5">
+                        <asp:Label ID="Label1" runat="server" Text="Usuarios" Font-Bold="true"></asp:Label>
+                    </td>
+                    <td></td>
                 </tr>
             </table>
         </div>
