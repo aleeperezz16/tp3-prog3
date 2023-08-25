@@ -15,16 +15,20 @@
             width: 150px;
 
         }
-        .auto-style3 {
-            width: 150px;
-            height: 35px;
-        }
         .auto-style4 {
             height: 35px;
-            width:90px;
+            width:164px;
         }
-        .auto-style5{
-            padding-top:30px;
+        .auto-style8 {
+            height: 51px;
+        }
+        .auto-style9 {
+            padding-top: 30px;
+            height: 51px;
+            width: 164px;
+        }
+        .auto-style13 {
+            width: 164px;
         }
     </style>
 </head>
@@ -43,22 +47,38 @@
                     <td class="auto-style2">
                         <asp:Label runat="server" Text="Nombre de Localidad:"></asp:Label>
                     </td>
-                    <td>
+                    <td class="auto-style13">
                         <asp:TextBox ID="TbLocalidad" runat="server" Width="151px"></asp:TextBox>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td class="auto-style2"></td>
-                    <td>
+                    <td class="auto-style13">
                         <asp:Button ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" Width="151px" />
                     </td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td class="auto-style5">
+                    <td class="auto-style8"></td>
+                    <td class="auto-style9">
                         <asp:Label ID="Label1" runat="server" Text="Usuarios" Font-Bold="true"></asp:Label>
+                    </td>
+                    <td class="auto-style8"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        Nombre Usuario:</td>
+                    <td class="auto-style13">
+                        <asp:TextBox ID="TbNombreUsuario" runat="server" Width="151px"></asp:TextBox>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        Contraseña:</td>
+                    <td class="auto-style13">
+                        <asp:TextBox ID="TbContraseña" runat="server" Width="151px"></asp:TextBox>
                     </td>
                     <td></td>
                 </tr>
