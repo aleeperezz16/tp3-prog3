@@ -102,7 +102,51 @@
                     <td class="auto-style13">
                         <asp:TextBox ID="tbCorreo" runat="server" Width="151px"></asp:TextBox>
                     </td>
-                    <td></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <asp:Label ID="lblCP" runat="server" Text="CP:"></asp:Label>
+                    </td>
+                    <td class="auto-style13">
+                        <asp:TextBox ID="txtCP" runat="server"></asp:TextBox>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <asp:Label ID="lblLocalidades" runat="server" Text="Localidades:"></asp:Label>
+                    </td>
+                    <td class="auto-style13">
+                        <asp:DropDownList ID="ddlLocalidades" runat="server">
+                        </asp:DropDownList>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        &nbsp;</td>
+                    <td class="auto-style13">
+                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" />
+                    </td>
+                    <td>
+                        <asp:Label ID="lblBienvenido" runat="server" Font-Bold="True"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        &nbsp;</td>
+                    <td class="auto-style13">
+                        &nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <asp:Button ID="btnIrAInicio" runat="server" Text="Ir a inicio .aspx" />
+                    </td>
+                    <td class="auto-style13">
+                        &nbsp;</td>
+                    <td>&nbsp;</td>
                 </tr>
             </table>
         </div>
