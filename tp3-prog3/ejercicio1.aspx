@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ejercicio1.aspx.cs" Inherits="tp3_prog3.ejercicio1" %>
+﻿<%@ Page Language="C#" UnobtrusiveValidationMode="None" AutoEventWireup="true" CodeBehind="ejercicio1.aspx.cs" Inherits="tp3_prog3.ejercicio1" %>
 
 <!DOCTYPE html>
 
@@ -56,7 +56,9 @@
                     <td class="auto-style13">
                         <asp:TextBox ID="TbLocalidad" runat="server" Width="151px"></asp:TextBox>
                     </td>
-                    <td></td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="TbLocalidad">Ingrese una Localidad valida</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2"></td>
