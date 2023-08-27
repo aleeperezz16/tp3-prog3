@@ -57,15 +57,17 @@
                         <asp:TextBox ID="TbLocalidad" runat="server" Width="151px"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="TbLocalidad">Ingrese una Localidad valida</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="TbLocalidad">Ingrese una Localidad válida</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style2"></td>
                     <td class="auto-style13">
-                        <asp:Button ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" Width="151px" />
+                        <asp:Button ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" Width="151px" OnClick="btnGuardarLocalidad_Click" />
                     </td>
-                    <td></td>
+                    <td>
+                        <asp:Label ID="lblErrorLocalidad" runat="server" ForeColor="Red"></asp:Label>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style15"></td>

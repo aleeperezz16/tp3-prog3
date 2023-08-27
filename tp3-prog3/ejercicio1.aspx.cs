@@ -13,5 +13,20 @@ namespace tp3_prog3
         {
 
         }
+
+        protected void btnGuardarLocalidad_Click(object sender, EventArgs e)
+        {
+            lblErrorLocalidad.Text = "";
+            foreach (ListItem item in ddlLocalidades.Items)
+            {
+                if (TbLocalidad.Text.Trim().ToUpper().Equals(item.Text.Trim().ToUpper()))
+                {
+                    lblErrorLocalidad.Text = "Esa localidad ya fue ingresada";
+                    break;
+                }
+            }
+          
+
+        }
     }
 }
