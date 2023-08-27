@@ -57,7 +57,9 @@
                         <asp:TextBox ID="TbLocalidad" runat="server" Width="151px"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="TbLocalidad">Ingrese una Localidad válida</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rfvLocalidad" runat="server" ControlToValidate="TbLocalidad">Ingrese una localidad</asp:RequiredFieldValidator>
+                        <br />
+                        <asp:RegularExpressionValidator ID="revLocalidad" runat="server" ControlToValidate="TbLocalidad" ValidationExpression="^([A-Za-z0-9]+\s*)+$">El nombre de localidad es inválido</asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>
