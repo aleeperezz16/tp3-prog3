@@ -65,10 +65,10 @@
                 <tr>
                     <td class="auto-style2"></td>
                     <td class="auto-style13">
-                        <asp:Button ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" Width="151px" OnClick="btnGuardarLocalidad_Click" />
+                        <asp:Button ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" Width="151px" />
                     </td>
                     <td>
-                        <asp:Label ID="lblErrorLocalidad" runat="server" ForeColor="Red"></asp:Label>
+                        <asp:CustomValidator ID="cvLocalidad" runat="server" ControlToValidate="TbLocalidad" OnServerValidate="cvLocalidad_ServerValidate1" ForeColor="Red">Esa localidad ya fue ingresada</asp:CustomValidator>
                     </td>
                 </tr>
                 <tr>

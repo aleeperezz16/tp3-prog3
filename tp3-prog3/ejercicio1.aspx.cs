@@ -14,28 +14,19 @@ namespace tp3_prog3
 
         }
 
-        protected void btnGuardarLocalidad_Click(object sender, EventArgs e)
+        protected void cvLocalidad_ServerValidate1(object source, ServerValidateEventArgs args)
         {
-            lblErrorLocalidad.Text = "";
-           int cuantos= ddlLocalidades.Items.Count;
-            
-            if(cuantos == 0)
-            {
-                ddlLocalidades.Items.Add(TbLocalidad.Text.Trim());
-            }
-
+            args.IsValid = true;
             foreach (ListItem item in ddlLocalidades.Items)
             {
                 if (TbLocalidad.Text.Trim().ToUpper().Equals(item.Text.Trim().ToUpper()))
                 {
-                    lblErrorLocalidad.Text = "Esa localidad ya fue ingresada";
+                    args.IsValid = false;
                     break;
                 }
-                else { ddlLocalidades.Items.Add(TbLocalidad.Text.Trim()); }
 
             }
-          
-
         }
+        
     }
 }

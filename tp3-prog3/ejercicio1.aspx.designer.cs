@@ -60,13 +60,13 @@ namespace tp3_prog3
         protected global::System.Web.UI.WebControls.Button btnGuardarLocalidad;
 
         /// <summary>
-        /// Control lblErrorLocalidad.
+        /// Control cvLocalidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblErrorLocalidad;
+        protected global::System.Web.UI.WebControls.CustomValidator cvLocalidad;
 
         /// <summary>
         /// Control Label1.
