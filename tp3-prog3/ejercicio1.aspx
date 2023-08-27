@@ -31,10 +31,14 @@
         }
         .auto-style14 {
             width: 159px;
+            height: 35px;
         }
         .auto-style15 {
             height: 51px;
             width: 159px;
+        }
+        .auto-style16 {
+            height: 35px;
         }
     </style>
 </head>
@@ -47,7 +51,7 @@
                     <td class="auto-style4">
                         <asp:Label runat="server" Font-Bold="True" Text="Localidades"></asp:Label>
                     </td>
-                    <td></td>
+                    <td class="auto-style16"></td>
                 </tr>
                 <tr>
                     <td class="auto-style2">

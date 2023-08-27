@@ -21,6 +21,7 @@ namespace tp3_prog3
             if(cuantos == 0)
             {
                 ddlLocalidades.Items.Add(TbLocalidad.Text.Trim());
+                TbLocalidad.Text = "";
             }
 
             args.IsValid = true;
@@ -37,9 +38,13 @@ namespace tp3_prog3
             if (aux == -1)
             {
                 ddlLocalidades.Items.Add(TbLocalidad.Text.Trim());
+                TbLocalidad.Text = "";
             }
 
+  
+
+
         }
-        
+
     }
 }
