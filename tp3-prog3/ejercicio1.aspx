@@ -69,7 +69,7 @@
                 <tr>
                     <td class="auto-style2"></td>
                     <td class="auto-style13">
-                        <asp:Button ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" Width="151px" />
+                        <asp:Button ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" Width="151px" OnClick="btnGuardarLocalidad_Click1" />
                     </td>
                     <td>
                         <asp:CustomValidator ID="cvLocalidad" runat="server" ControlToValidate="TbLocalidad" OnServerValidate="cvLocalidad_ServerValidate1" ForeColor="Red">Esa localidad ya fue ingresada</asp:CustomValidator>
@@ -120,7 +120,9 @@
                     <td class="auto-style13">
                         <asp:TextBox ID="tbCorreo" runat="server" Width="151px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="tbCorreo" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Ingrese un correo valido</asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
