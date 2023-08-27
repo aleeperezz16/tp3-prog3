@@ -88,23 +88,31 @@
                     <td class="auto-style13">
                         <asp:TextBox ID="TbNombreUsuario" runat="server" Width="151px"></asp:TextBox>
                     </td>
-                    <td></td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvUsuario" runat="server" ControlToValidate="TbNombreUsuario">Ingrese un nombre de usuario</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
                         Contraseña:</td>
                     <td class="auto-style13">
-                        <asp:TextBox ID="TbContraseña" runat="server" Width="151px"></asp:TextBox>
+                        <asp:TextBox ID="TbContrasenia" runat="server" Width="151px"></asp:TextBox>
                     </td>
-                    <td></td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="TbContrasenia">Ingrese una contraseña</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
                         Repetir Contraseña:</td>
                     <td class="auto-style13">
-                        <asp:TextBox ID="tbRepetirContraseña" runat="server" Width="151px"></asp:TextBox>
+                        <asp:TextBox ID="tbRepetirContrasenia" runat="server" Width="151px"></asp:TextBox>
                     </td>
-                    <td></td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvRepetirContrasenia" runat="server" ControlToValidate="tbRepetirContrasenia">Repita su contraseña</asp:RequiredFieldValidator>
+                        <br />
+                        <asp:CompareValidator ID="cvRepetirContrasenia" runat="server" ControlToCompare="TbContrasenia" ControlToValidate="tbRepetirContrasenia">Las contraseñas no son iguales</asp:CompareValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">
