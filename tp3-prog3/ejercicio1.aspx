@@ -133,7 +133,11 @@
                     <td class="auto-style13">
                         <asp:TextBox ID="txtCP" runat="server"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="rfvCP" runat="server" ControlToValidate="txtCP">Ingrese un código postal</asp:RequiredFieldValidator>
+                        <br />
+                        <asp:RangeValidator ID="rvCP" runat="server" ControlToValidate="txtCP" MaximumValue="9999" MinimumValue="1000" Type="Integer">El código postal debe ser un número de 4 dígitos</asp:RangeValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">

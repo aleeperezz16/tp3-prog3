@@ -186,6 +186,24 @@ namespace tp3_prog3
         protected global::System.Web.UI.WebControls.TextBox txtCP;
 
         /// <summary>
+        /// Control rfvCP.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCP;
+
+        /// <summary>
+        /// Control rvCP.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvCP;
+
+        /// <summary>
         /// Control lblLocalidades.
         /// </summary>
         /// <remarks>
