@@ -69,7 +69,7 @@
                 <tr>
                     <td class="auto-style2"></td>
                     <td class="auto-style13">
-                        <asp:Button ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" Width="151px" OnClick="btnGuardarLocalidad_Click1" ValidationGroup="Grupo1" />
+                        <asp:Button ID="btnGuardarLocalidad" runat="server" Text="Guardar Localidad" Width="151px" ValidationGroup="Grupo1" />
                     </td>
                     <td>
                         <asp:CustomValidator ID="cvLocalidad" runat="server" ControlToValidate="TbLocalidad" OnServerValidate="cvLocalidad_ServerValidate1" ForeColor="Red" ValidationGroup="Grupo1">Esa localidad ya fue ingresada</asp:CustomValidator>
@@ -96,7 +96,7 @@
                     <td class="auto-style2">
                         Contraseña:</td>
                     <td class="auto-style13">
-                        <asp:TextBox ID="TbContrasenia" runat="server" Width="151px" ValidationGroup="Grupo2"></asp:TextBox>
+                        <asp:TextBox ID="TbContrasenia" type="password" runat="server" Width="151px" ValidationGroup="Grupo2"></asp:TextBox>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="rfvContrasenia" runat="server" ControlToValidate="TbContrasenia" ValidationGroup="Grupo2">Ingrese una contraseña</asp:RequiredFieldValidator>
@@ -106,7 +106,7 @@
                     <td class="auto-style2">
                         Repetir Contraseña:</td>
                     <td class="auto-style13">
-                        <asp:TextBox ID="tbRepetirContrasenia" runat="server" Width="151px" ValidationGroup="Grupo2"></asp:TextBox>
+                        <asp:TextBox ID="tbRepetirContrasenia" type="password" runat="server" Width="151px" ValidationGroup="Grupo2"></asp:TextBox>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="rfvRepetirContrasenia" runat="server" ControlToValidate="tbRepetirContrasenia" ValidationGroup="Grupo2">Repita su contraseña</asp:RequiredFieldValidator>
