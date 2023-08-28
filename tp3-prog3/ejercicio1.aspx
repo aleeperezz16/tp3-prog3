@@ -171,7 +171,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:Button ID="btnIrAInicio" runat="server" Text="Ir a inicio .aspx" ValidationGroup="Grupo3" />
+                        <asp:Button ID="btnIrAInicio" runat="server" Text="Ir a inicio .aspx" ValidationGroup="Grupo3" OnClick="btnIrAInicio_Click" />
                     </td>
                     <td class="auto-style13">
                         &nbsp;</td>

@@ -47,5 +47,9 @@ namespace tp3_prog3
         {
             lblBienvenido.Text = "Bienvenido " + TbNombreUsuario.Text;
         }
+        protected void btnIrAInicio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Inicio.aspx");
+        }
     }
 }
