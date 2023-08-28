@@ -122,6 +122,8 @@
                     </td>
                     <td>
                         <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="tbCorreo" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Ingrese un correo valido</asp:RegularExpressionValidator>
+                        <br />
+                        <asp:RequiredFieldValidator ID="rfvCorreo" runat="server" ControlToValidate="tbCorreo">Ingrese un correo</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
