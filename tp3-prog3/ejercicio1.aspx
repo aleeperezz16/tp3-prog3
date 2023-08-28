@@ -156,7 +156,7 @@
                     <td class="auto-style2">
                         &nbsp;</td>
                     <td class="auto-style13">
-                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="Grupo2" />
+                        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar Usuario" ValidationGroup="Grupo2" OnClick="btnGuardarUsuario_Click" />
                     </td>
                     <td>
                         <asp:Label ID="lblBienvenido" runat="server" Font-Bold="True"></asp:Label>

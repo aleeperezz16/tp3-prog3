@@ -50,5 +50,10 @@ namespace tp3_prog3
         {
 
         }
+
+        protected void btnGuardarUsuario_Click(object sender, EventArgs e)
+        {
+            lblBienvenido.Text = "Bienvenido " + TbNombreUsuario.Text;
+        }
     }
 }
