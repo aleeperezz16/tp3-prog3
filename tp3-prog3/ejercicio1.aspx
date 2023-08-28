@@ -131,7 +131,7 @@
                         <asp:Label ID="lblCP" runat="server" Text="CP:"></asp:Label>
                     </td>
                     <td class="auto-style13">
-                        <asp:TextBox ID="txtCP" runat="server" ValidationGroup="Grupo2"></asp:TextBox>
+                        <asp:TextBox ID="txtCP" runat="server" ValidationGroup="Grupo2" Width="151px"></asp:TextBox>
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="rfvCP" runat="server" ControlToValidate="txtCP" ValidationGroup="Grupo2">Ingrese un código postal</asp:RequiredFieldValidator>
@@ -171,7 +171,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:Button ID="btnIrAInicio" runat="server" Text="Ir a inicio .aspx" ValidationGroup="Grupo3" OnClick="btnIrAInicio_Click" />
+                        <asp:Button ID="btnIrAInicio" runat="server" Text="Ir a Inicio.aspx" ValidationGroup="Grupo3" OnClick="btnIrAInicio_Click" />
                     </td>
                     <td class="auto-style13">
                         &nbsp;</td>
